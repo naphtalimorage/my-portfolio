@@ -9,9 +9,14 @@ import {
 import { useState } from "react";
 
 export default function SimpleForm() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
   const [response, setResponse] = useState('');
 
+
   const handleSubmit = async (e) => {
+    e.preventDefault();
     const res = await fetch('/api/contact', {
       method: 'POST',
       headers: {
@@ -36,67 +41,51 @@ export default function SimpleForm() {
         onSubmit={handleSubmit}
         method="POST"
       >
-        <div className="mb-1 flex flex-col gap-6">
-          <Typography variant="h6" color="blue-gray" className="-mb-3" htmlFor="name">
-            Your Name
-            <Input
-              id="name"
-              size="lg"
-              name="name"
-              required
-              placeholder="Enter your name..."
-              className="!border-t-blue-gray-200 focus:!border-t-gray-900"
-              labelProps={{
-                className: "before:content-none after:content-none",
-              }}
-              autoComplete="name"
-            />
-          </Typography>
+        <label htmlFor="name">Name:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+          className="border border-gray-800 p-2 rounded-lg w-80"
+          autoComplete="name"
+        /><br/>
 
+        <label htmlFor="email">Email:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+          className="border border-gray-800 p-2 rounded-lg w-80"
+          autoComplete="email"
+        /><br /><br />
 
-          <Typography variant="h6" color="blue-gray" className="-mb-3" htmlFor="email">
-            Your Email
-            <Input
-              id="email"
-              size="lg"
-              name="email"
-              required
-              placeholder="Enter your email..."
-              className="!border-t-blue-gray-200 focus:!border-t-gray-900"
-              labelProps={{
-                className: "before:content-none after:content-none",
-              }}
-              autoComplete="email"
+        <label htmlFor="message">Message:</label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          required
+          className="border border-gray-800 p-2 rounded-lg w-80"
+          autoComplete="off"
+        ></textarea><br /><br />
 
-            />
-          </Typography>
-
-
-          <Typography variant="h6" color="blue-gray" className="-mb-3" htmlFor="message">
-            Message
-            <Textarea
-              id="message"
-              name="message"
-              size="lg"
-              required
-              placeholder="Enter your message..."
-              className="!border-t-blue-gray-200 focus:!border-t-gray-900"
-              labelProps={{
-                className: "before:content-none after:content-none",
-              }}
-              autoComplete="off"
-
-            />
-          </Typography>
-
-
+        <div className="flex justify-center">
           <Button type="submit" className="bg-purple-600 hover:bg-purple-800">
             Send Message
           </Button>
         </div>
-        {response && <p>{response}</p>}
-      </form>
 
+
+      </form>
+      {response && <p>{response}</p>}
     </Card>
   );
 }
