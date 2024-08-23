@@ -24,10 +24,7 @@ export default function SimpleForm() {
       },
       body: JSON.stringify({ name, email, message }),
     });
-    const data = await res.json();
-    console.log(data);
-
-    setResponse(data.message);
+    const data = await res.json();    setResponse(data.message);
 
     setName('');
     setEmail('');
@@ -51,7 +48,7 @@ export default function SimpleForm() {
           required
           className="border border-gray-800 p-2 rounded-lg w-80"
           autoComplete="name"
-        /><br/>
+        /><br />
 
         <label htmlFor="email">Email:</label><br />
         <input
@@ -75,17 +72,17 @@ export default function SimpleForm() {
           required
           className="border border-gray-800 p-2 rounded-lg w-80"
           autoComplete="off"
-        ></textarea><br /><br />
+        ></textarea><br />
 
         <div className="flex justify-center">
           <Button type="submit" className="bg-purple-600 hover:bg-purple-800">
             Send Message
           </Button>
         </div>
-
-
       </form>
-      {response && <p>{response}</p>}
+      <div className="flex justify-center">
+        {response && <p>{response}</p>}
+      </div>
     </Card>
   );
 }
