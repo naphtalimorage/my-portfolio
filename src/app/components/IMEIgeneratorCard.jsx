@@ -29,8 +29,7 @@ export default function IMEIgeneratorCard() {
           color="gray"
           className="font-normal opacity-75"
         >
-          A web application that generates a random valid IMEI and also checks and validate IMEI given
-        </Typography>
+          A web  app built with react that helps users to generate a random IMEI which is valid and also it checks whether an IMEI is valid or invalid which enhance their productivity and time management.        </Typography>
       </CardBody>
       <CardFooter className="grid grid-cols-1 lg:grid-cols-2 gap-2">
         <Button

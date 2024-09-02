@@ -36,7 +36,7 @@ import {
           <Button
             ripple={false}
             fullWidth={true}
-            onClick={() => window.location.href = "https://naphtalimorage.github.io/imei-generator-webapp/"}
+            onClick={() => window.location.href = "https://nextjs-movie-app-weld.vercel.app/movies"}
             className=" bg-purple-900/10 text-purple-500 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
           >
             Live link
@@ -46,7 +46,7 @@ import {
             ripple={false}
             fullWidth={true}
             className="bg-purple-900/10 text-purple-500  shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100 "
-            onClick={() => window.location.href = "https://github.com/naphtalimorage/imei-generator-webapp"}
+            onClick={() => window.location.href = "https://github.com/naphtalimorage/nextjs-movie-app"}
           >
             Source code
           </Button>
