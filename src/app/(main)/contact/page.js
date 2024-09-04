@@ -11,10 +11,10 @@ import {
 export default function Contact() {
   return (
     <div className="h-[700px] bg-gradient-to-r from-black to-purple-500 via-black via-[80%] items-center justify-center">
-      <h1 className="text-4xl md:text-6xl lg:text-8xl font-serif font-bold text-center relative  text-white">
+      <h1 className=" text-4xl md:text-6xl lg:text-8xl font-serif font-bold text-center relative top-10 text-white">
         Contact me
       </h1>
-      <div className="flex items-center justify-center relative bottom-16">
+      <div className="flex items-center justify-center ">
         <SimpleForm />
       </div>
 

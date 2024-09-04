@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function About() {
    return (
-      <div className="min-h-screen bg-gradient-to-r from-black to-purple-500 via-black via-[80%] ">
+      <div className="h-fit bg-gradient-to-r from-black to-purple-500 via-black via-[80%] ">
          <div className="text-center relative top-5 lg:top-40  lg:mr-24">
             <p className="text-white font-bold text-5xl md:text-6xl lg:text-8xl font-serif">About</p>
             <p className="text-white font-bold text-5xl md:text-6xl lg:text-8xl font-serif lg:mr-36 lg:inline-block">me</p>

@@ -7,7 +7,7 @@ import { Button } from "@material-tailwind/react";
 
 export default function Projects() {
   return (
-    <div className="min-h-fit bg-gradient-to-r from-black to-purple-500 via-black via-[30%] ">
+    <div className="h-fit bg-gradient-to-r from-black to-purple-500 via-black via-[30%] ">
       <h1 className="text-4xl md:text-6xl lg:text-8xl font-serif font-bold text-center relative top-16 text-white">
         My Projects
       </h1>
@@ -24,7 +24,7 @@ export default function Projects() {
             "https://github.com/naphtalimorage?tab=repositories")
         }
         variant="text"
-        className=" flex text-white gap-2 bg-purple-400 hover:bg-purple-600 "
+        className=" flex text-white gap-2 bg-purple-400 hover:bg-purple-600 mb-10"
       >
         More projects
        

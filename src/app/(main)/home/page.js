@@ -9,7 +9,7 @@ import Contact from "../contact/page";
 export default function HomePage() {
   return (
     <div>
-      <div className="min-h-screen bg-gradient-to-r from-black to-purple-500 via-black via-[40%]">
+      <div className="h-fit bg-gradient-to-r from-black to-purple-500 via-black via-[40%]">
         <div className="relative top-5"></div>
         <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between px-4 lg:px-24">
           <div className="text-center lg:text-left lg:ml-[18px] mt-10 lg:mt-32">
