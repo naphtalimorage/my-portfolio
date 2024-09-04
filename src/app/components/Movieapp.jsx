@@ -9,7 +9,7 @@ import {
    
   export default function MovieappCard() {
     return (
-      <Card className="w-80">
+      <Card className="w-60 h-auto  md:h-[450px] lg:h-full lg:w-80">
         <CardHeader shadow={false} floated={false} className="h-44">
           <img
             src="https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
@@ -17,7 +17,7 @@ import {
             className="h-full w-full object-cover"
           />
         </CardHeader>
-        <CardBody>
+        <CardBody className="mb-2  md:mb-4  lg:mb-6">
           <div className=" flex items-center justify-between">
             <Typography color="blue-gray" className="font-semibold">
               Movie Web App
@@ -31,7 +31,7 @@ import {
             A web application that generates a random valid IMEI and also checks and validate IMEI given
           </Typography>
         </CardBody>
-        <CardFooter className="grid grid-cols-1 lg:grid-cols-2 gap-2">
+        <CardFooter className="grid grid-cols-1 lg:grid-cols-2 gap-2 ">
           <Button
             ripple={false}
             fullWidth={true}
