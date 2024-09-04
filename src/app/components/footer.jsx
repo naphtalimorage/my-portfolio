@@ -31,7 +31,7 @@ export default function Footer() {
             Naphtali Morage
           </Typography>
           <div className=" lg:ml-60">
-            <ul className="flex flex-col item-center justify-center lg:flex-row gap-8">
+            <ul className="flex flex-col md:flex-row item-center justify-center lg:flex-row gap-8">
               {links.map(({ label, href }, key) => {
 
                 return (
