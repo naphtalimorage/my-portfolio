@@ -10,15 +10,15 @@ import {
 
 export default function Contact() {
   return (
-    <div className="h-[700px] bg-gradient-to-r from-black to-purple-500 via-black via-[80%]">
-      <h1 className="text-8xl font-serif font-bold text-center relative  text-white">
+    <div className="h-[700px] bg-gradient-to-r from-black to-purple-500 via-black via-[80%] items-center justify-center">
+      <h1 className="text-4xl md:text-6xl lg:text-8xl font-serif font-bold text-center relative  text-white">
         Contact me
       </h1>
       <div className="flex items-center justify-center relative bottom-16">
         <SimpleForm />
       </div>
 
-      <div className="flex text-center justify-center gap-8  relative bottom-10">
+      <div className="flex flex-row text-center justify-center gap-4 lg:gap-8  relative bottom-10">
         <a
           href="https://wa.me/+254716220216"
           target="_blank"
