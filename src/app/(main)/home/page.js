@@ -38,7 +38,7 @@ export default function HomePage() {
               height={200}
               priority
               alt="Naphtali Morage"
-              className="rounded-full w-[200px] h-[200px] lg:w-[400px] lg:h-[400px]"
+              className="rounded-full w-[200px] h-[200px] lg:w-[400px] lg:h-[400px] mb-10"
             />
           </div>
         </div>
