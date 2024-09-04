@@ -6,8 +6,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
-    template: "%s | myportfolio",
-    default: "myportfolio"
+    template: "naphtali | %s",
+    default: "naphportfolio"
   },
   description: "My portfolio app",
 };
