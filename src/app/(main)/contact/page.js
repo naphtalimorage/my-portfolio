@@ -18,7 +18,7 @@ export default function Contact() {
         <SimpleForm />
       </div>
 
-      <div className="flex flex-row text-center justify-center gap-4 lg:gap-8  relative bottom-10">
+      <div className="flex flex-row text-center justify-center gap-4 lg:gap-8  relative bottom-80 lg:bottom-44">
         <a
           href="https://wa.me/+254716220216"
           target="_blank"
