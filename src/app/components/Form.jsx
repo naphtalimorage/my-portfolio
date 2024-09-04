@@ -32,7 +32,7 @@ export default function SimpleForm() {
   return (
     <Card color="transparent" shadow={false} className="flex justify-center items-center min-h-screen">
       <form
-        className="mb-56 w-full max-w-sm sm:max-w-sm md:w-[350px] lg:w-[400px] p-4 lg:p-8 rounded-lg bg-white"
+        className="mb-56 lg:mb-10 w-full max-w-sm sm:max-w-sm md:w-[350px] lg:w-[400px] p-4 lg:p-8 rounded-lg bg-white"
         onSubmit={handleSubmit}
         method="POST"
       >
