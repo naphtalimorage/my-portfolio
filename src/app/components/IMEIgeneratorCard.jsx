@@ -10,28 +10,28 @@ import Image from "next/image";
 
 export default function IMEIgeneratorCard() {
   return (
-    <Card className="w-80">
-      <CardHeader shadow={false} floated={false} className="h-44">
+    <Card className=" w-60 h-auto md:h-[450px] lg:h-full lg:w-80">
+      <CardHeader shadow={false} floated={false} className=" lg:h-44">
         <img
           src="/imei.png"
           alt="card-image"
           className="h-full w-full object-cover "
         />
       </CardHeader>
-      <CardBody>
+      <CardBody className="mb-2   md:mb-4  lg:mb-6">
         <div className=" flex items-center justify-between">
-          <Typography color="blue-gray" className="font-semibold">
+          <Typography color="blue-gray" className="font-semibold text-sm md:text-base">
             IMEI Generator
           </Typography>
         </div>
         <Typography
           variant="small"
           color="gray"
-          className="font-normal opacity-75"
+          className="font-normal opacity-75 "
         >
           A web  app built with react that helps users to generate a random IMEI which is valid and also it checks whether an IMEI is valid or invalid which enhance their productivity and time management.        </Typography>
       </CardBody>
-      <CardFooter className="grid grid-cols-1 lg:grid-cols-2 gap-2">
+      <CardFooter className="grid grid-cols-1 lg:grid-cols-2 gap-2 ">
         <Button
           ripple={false}
           fullWidth={true}
@@ -49,7 +49,7 @@ export default function IMEIgeneratorCard() {
         >
           Source code
         </Button>
-      </CardFooter>
+      </CardFooter>   
     </Card>
   );
 }
