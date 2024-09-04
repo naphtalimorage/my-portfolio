@@ -24,14 +24,14 @@ const currentYear = new Date().getFullYear();
 
 export default function Footer() {
   return (
-    <footer className="relative w-full border-t-2 border-purple-700">
+    <footer className="relative  w-full border-t-2 border-purple-700">
       <div className="mx-auto w-full max-w-7xl px-8 mt-5">
-        <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
-          <Typography variant="h5" className="mb-6 text-white">
+        <div className="grid grid-cols-1 flex-col lg:justify-between gap-4 md:grid-cols-2">
+          <Typography variant="h5" className="mb-6 text-white text-sm md:text-base lg:text-xl">
             Naphtali Morage
           </Typography>
-          <div className="ml-60">
-            <ul className="flex flex-row gap-8">
+          <div className=" lg:ml-60">
+            <ul className="flex flex-col item-center justify-center lg:flex-row gap-8">
               {links.map(({ label, href }, key) => {
 
                 return (
@@ -39,10 +39,9 @@ export default function Footer() {
                     key={label}
                     as="a"
                     href={href}
-                    variant="small"
                     color="gray"
                   >
-                    <span className="text-gray-500 hover:text-purple-500"> {label}</span>
+                    <span className="text-gray-500 hover:text-purple-500 text-sm lg:text-base"> {label}</span>
                   </Typography>
                 );
               })}
@@ -57,7 +56,7 @@ export default function Footer() {
             &copy; {currentYear} <a href="https://material-tailwind.com/">Naphtali Morage</a>. All
             Rights Reserved.
           </Typography>
-          <div className="flex gap-4 text-blue-gray-500 sm:justify-center mr-20">
+          <div className="flex gap-4 text-blue-gray-500 sm:justify-center lg:mr-20">
             <Typography as="a" href="https://www.facebook.com/profile.php?id=100073815214270" className="opacity-80 transition-opacity hover:opacity-100">
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path
